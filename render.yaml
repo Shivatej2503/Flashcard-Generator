@@ -1,0 +1,7 @@
+services:
+  - type: static
+    name: Flashcard-Generator
+    env: node
+    nodeVersion: "20"
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    staticPublishPath: dist
